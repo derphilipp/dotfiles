@@ -8,9 +8,15 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'davidhalter/jedi-vim'
 "Bundle 'vim-orgmode'
-Bundle 'jceb/vim-orgmode.git'
+"Bundle 'jceb/vim-orgmode.git'
 Bundle 'vim-scripts/vimwiki.git'
 Bundle 'Lokaltog/vim-powerline.git'
+Bundle 'Lokaltog/vim-easymotion'
+"Bundle 'jeffkreeftmeijer/vim-numbertoggle.git'
+
+
+au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
+au BufEnter *.org            call org#SetOrgFileType()
 
 
 set nocompatible
@@ -47,5 +53,15 @@ set list
 set list listchars=tab:▸\ ,trail:⋅,nbsp:⋅
 
 set clipboard=unnamed
-
+let g:Powerline_symbols = 'fancy'
 "#source $HOME/.vim/python.vim
+"
+set relativenumber
+set number
+
+" Easymotion
+map <Leader>h <Plug>(easymotion-lineforward)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+map <Leader>l <Plug>(easymotion-linebackward)
+let g:EasyMotion_startofline = 0 " keep cursor colum when JK motion
