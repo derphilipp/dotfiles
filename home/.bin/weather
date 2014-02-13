@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+import subprocess
+import urllib
+from xml.dom import minidom
+
+CITY_ID = '680564'
+TEMP_TYPE = 'c'
+
+WEATHER_URL = 'http://xml.weather.yahoo.com/forecastrss?w=' + CITY_ID +'&u=' + TEMP_TYPE
+WEATHER_NS = 'http://xml.weather.yahoo.com/ns/rss/1.0'
+
+dom = minidom.parse(urllib.urlopen(WEATHER_URL))
+ycondition = dom.getElementsByTagNameNS(WEATHER_NS, 'condition')[0]
+CURRENT_OUTDOOR_TEMP = ycondition.getAttribute('temp')
+print(CURRENT_OUTDOOR_TEMP)
