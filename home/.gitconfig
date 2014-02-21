@@ -1,0 +1,9 @@
+[user]
+	name = Philipp Weissmann
+	email = mail@philipp-weissmann.de
+[core]
+	editor = vim
+[credential]
+	helper = cache --timeout=3600
+[alias]
+	ca = commit -a
