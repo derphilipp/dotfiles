@@ -1,3 +1,6 @@
 [submodule "home/.vim/bundle/vundle"]
 	path = home/.vim/bundle/vundle
 	url = https://github.com/gmarik/Vundle.vim.git
+[submodule "home/.oh-my-fish"]
+	path = home/.oh-my-fish
+	url = https://github.com/bpinto/oh-my-fish.git
