@@ -6,4 +6,8 @@
 [credential]
 	helper = cache --timeout=3600
 [alias]
-	ca = commit -a
+    ca = commit -a
+    c = clone --recursive
+    s = status -s
+    l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+
