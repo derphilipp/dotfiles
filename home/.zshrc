@@ -8,7 +8,7 @@ EDITOR="vim" ;
 export EDITOR
 set -o vi
 
-
+export PATH=$PATH:~/.bin
 #bindkey -e
 setopt appendhistory autocd beep extendedglob nomatch notify
 zstyle :compinstall filename '.zshrc'
