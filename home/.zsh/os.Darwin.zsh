@@ -14,5 +14,5 @@ export PATH=$PATH:/opt/local/Library/Frameworks/Python.framework/Versions/3.3/bi
 alias pp="echo \"`pwd`\" | xargs pbcopy"
 
 #Powerline
-. /opt/local/Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/site-packages/powerline/bindings/zsh/powerline.zsh
+#. /opt/local/Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/site-packages/powerline/bindings/zsh/powerline.zsh
 

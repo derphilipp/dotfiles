@@ -7,3 +7,6 @@
 [submodule "home/.oh-my-zsh"]
 	path = home/.oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "home/.zprezto"]
+	path = home/.zprezto
+	url = https://github.com/sorin-ionescu/prezto.git
