@@ -32,11 +32,12 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
-  'prompt' \
   'macports' \
   'tmux' \
   'ssh' \
-  'git'
+  'git' \
+  'syntax-highlighting' \
+  'prompt' 
 
 #
 # Editor
