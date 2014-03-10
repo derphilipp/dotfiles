@@ -12,6 +12,8 @@ es(){
     geeknote find --search "$@" --content-search
 }
 
+
+alias 1p="1pass --path ~/Dropbox/tools/1Password/1Password.agilekeychain --fuzzy" 
 export PATH=$PATH:~/.bin
 
 setopt appendhistory autocd beep extendedglob nomatch notify
