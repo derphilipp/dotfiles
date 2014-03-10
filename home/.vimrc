@@ -66,5 +66,5 @@ map <Leader>k <Plug>(easymotion-k)
 map <Leader>l <Plug>(easymotion-linebackward)
 let g:EasyMotion_startofline = 0 " keep cursor colum when JK motion
 
-source /lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+"source /lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 set laststatus=2

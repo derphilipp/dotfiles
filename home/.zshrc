@@ -6,10 +6,14 @@ SAVEHIST=1000
 # Vim for everythin
 EDITOR="vim" ; 
 export EDITOR
-#set -o vi
+
+# Search in evernote
+es(){
+    geeknote find --search "$@" --content-search
+}
 
 export PATH=$PATH:~/.bin
-#bindkey -e
+
 setopt appendhistory autocd beep extendedglob nomatch notify
 zstyle :compinstall filename '.zshrc'
 setopt no_case_glob  # set ignore case for ls etc
